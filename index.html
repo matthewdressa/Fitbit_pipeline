@@ -13,7 +13,7 @@
     <p>Use this handy contact form to get in touch with me.</p>
     
     <form>
-      <div class="input-group">
+      <!-- <div class="input-group">
         <input id="salutation-mr" name="salutation" type="radio" value="Mr."/>
         <label class="inline" for="salutation-mr">Mr.</label>
         
@@ -22,7 +22,7 @@
         
         <input id="salutation-ms" name="salutation" type="radio" value="Ms."/>
         <label class="inline" for="salutation-ms">Ms.</label>
-      </div>
+      </div> -->
       
       <div class="input-group">
         <label for="name">Full Name</label>
@@ -35,24 +35,42 @@
       </div>
       
       <div class="input-group">
-        <label for="subject">How can I help you?</label>
-        <select id="subject" name="subject">
-          <option>I have a problem.</option>
-          <option>I have a general question.</option>
+        <label for="version">Fitbit Version: </label>
+        <select id="version" name="version">
+          <option value="higgs">Ionic</option>
+          <option value="meson">Versa</option>
+          <option value="gemini">Versa Lite</option>
+          <option value="mira">Versa 2</option>
+          <option value="atlas">Versa 3</option>
+          <option value="vulcan">Sense</option>
+
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="color">Favorite Color: </label>
+        <select id="color" name="color">
+          <option value="red">red</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="indigo">indigo</option>
+            <option value="violet">violet</option>
         </select>
       </div>
       
-      <div class="input-group">
+      <!-- <div class="input-group">
         <label for="message">Enter a Message</label>
         <textarea id="message" name="message" rows="6" cols="65"></textarea>
-      </div>
+      </div> -->
       
       <div class="input-group">
-        <p class="group-label">Please send me:</p>
-        <input id="snacks-pizza" name="snacks" type="checkbox" value="pizza"/>
-        <label class="inline" for="snacks-pizza">Pizza</label>
-        <input id="snacks-cake" name="snacks" type="checkbox" value="cake"/>
-        <label class="inline" for="snacks-cake">Cake</label>
+        <p class="group-label">I prefer a clock face that is:</p>
+        <input id="clock-analog" name="clock" type="checkbox" value="Analog"/>
+        <label class="inline" for="clock-analog">Analog</label>
+        <input id="clock-digital" name="clock" type="checkbox" value="Digital"/>
+        <label class="inline" for="clock-digital">Digital</label>
       </div>
       <input name="secret" type="hidden" value="1b3a9374-1a8e-434e-90ab-21aa7b9b80e7"/>
       <button type="submit">Send It!</button>
@@ -66,6 +84,7 @@
       
     </html>
 
+    <!-- Scripts at the bottom so form data can be processed -->
     <script src="assets/js/data_grab.js"></script>
 
   </body>
