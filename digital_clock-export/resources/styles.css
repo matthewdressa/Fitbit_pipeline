@@ -1,0 +1,38 @@
+
+.red {
+  viewport-fill: red;
+}
+
+.orange {
+  viewport-fill: orange;
+}
+
+.yellow {
+  viewport-fill: yellow;
+}
+
+.green {
+  viewport-fill: green;
+}
+
+.blue {
+  viewport-fill: blue;
+}
+
+.indigo {
+  viewport-fill: indigo;
+}
+
+.violet {
+  viewport-fill: violet;
+}
+
+#myLabel {
+  font-size: 80;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%+40;
+  fill: white;
+}

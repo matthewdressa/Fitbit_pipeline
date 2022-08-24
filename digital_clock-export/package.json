@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0"
+  },
+  "fitbit": {
+    "appUUID": "b00e819e-6390-4578-ac4a-a1d6478ebce3",
+    "appType": "clockface",
+    "appDisplayName": "digital_clock",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_user_profile",
+      "access_heart_rate",
+      "access_location",
+      "access_internet",
+      "run_background",
+      "access_exercise"
+    ],
+    "buildTargets": [
+      "atlas"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "digital_clock"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

@@ -5,11 +5,6 @@ function handleFormSubmit(event) {
     
     const formJSON = Object.fromEntries(data.entries());
   
-    // for multi-selects, we need special handling
-    // formJSON.colors = data.getAll('colors');
-    // formJSON.snacks = data.getAll('snacks');
-    // formJSON.snacks = data.getAll('snacks');
-    // formJSON.snacks = data.getAll('snacks');
     
     const results = document.querySelector('.results pre');
     results.innerText = JSON.stringify(formJSON, null, 2);
