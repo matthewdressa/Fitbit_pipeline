@@ -1,5 +1,5 @@
 document.writeln("<script type='text/javascript' src='data_grab.js'></script>");
-
+var x = handleFormSubmit(event);
 function color_pref(x) {
         // Def: Compares user color pref to array and returns it
 
@@ -27,6 +27,7 @@ function background_color(svg_color) {
     return 
 
 }
+
 
 const svg_color = color_pref(x);
 const ___ = background_color(svg_color);

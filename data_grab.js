@@ -30,7 +30,7 @@ function handleFormSubmit(event) {
   const results = document.querySelector('.results pre');
   results.innerText = JSON.stringify(formJSON, 2);
 
-  
+  return color_pref;
   
 }
 
