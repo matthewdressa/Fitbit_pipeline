@@ -65,7 +65,7 @@ function background_color(svg_color) {
     
     // The class is updated to match the color passed into parameters
     let updated_styling = document.getElementById('.'+svg_color.toString()).className;
-    return 
+    return updated_styling;
 
 }
 
