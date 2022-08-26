@@ -49,8 +49,7 @@ form.addEventListener('submit', handleFormSubmit);
 // Goals for today
 // Grab variables input by users (still working on this)
 // Create a function that specifies a user's color preference (example: yellow);
-// Given this color preference ^, we want to change the background class of the svg tag located here 
-                                                                                                // C:\Users\Matthew\Documents\GitHub\Fitbit_pipeline\Fitbit_pipeline\digital_clock-export\resources\index.view
+// Given this color preference ^, we want to change the background class of the svg tag located here                                                                               
 // After that we want to zip the root folder
 
 
