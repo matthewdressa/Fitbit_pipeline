@@ -1,4 +1,4 @@
-<svg class="blue">
+<svg id="background" class="blue">
   
   <text id="myLabel" />
 </svg>
