@@ -24,6 +24,8 @@ function handleFormSubmit(event) {
   var color_pref = formJSON['color'];
   var file_name_ex = formJSON['filename'];
 
+  formJSON.user_activities = data.getAll("user_activity");
+
   var file_name = formJSON['filename']['name'];
 
   // clock_pref = formJSON['clock'];

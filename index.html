@@ -26,14 +26,27 @@
           <label for="email">Email Address</label>
           <input id="email" name="email" type="email"/>
         </div>
+
+        <div class="input-group">
+          <label for="pri_color_code">Primary Color (HEX):</label>
+          <input id="pri_color_code" name="pri_color_code" type="text"/>
+        </div>
         
+        <div class="input-group">
+          <label for="sec_color_code">Secondary Color (HEX):</label>
+          <input id="sec_color_code" name="sec_color_code" type="text"/>
+        </div>
+
+        <div class="input-group">
+          <label for="tertiary_color_code">Tertiary Color (HEX):</label>
+          <input id="tertiary_color_code" name="tertiary_color_code" type="text"/>
+        </div>
+        
+        
+
         <div class="input-group">
           <label for="version">Fitbit Version: </label>
           <select id="version" name="version">
-            <option value="higgs">Ionic</option>
-            <option value="meson">Versa</option>
-            <option value="gemini">Versa Lite</option>
-            <option value="mira">Versa 2</option>
             <option value="atlas">Versa 3</option>
             <option value="vulcan">Sense</option>
 
@@ -41,16 +54,18 @@
         </div>
 
         <div class="input-group">
-          <label for="color">Favorite Color: </label>
-          <select id="color" name="color">
-              <option value="red">red</option>
-              <option value="orange">orange</option>
-              <option value="yellow">yellow</option>
-              <option value="green">green</option>
-              <option value="blue">blue</option>
-              <option value="indigo">indigo</option>
-              <option value="violet">violet</option>
+          <label for="f_style">Time Font Style:</label>
+          <select id="f_style" name="time_font_style">
+              <option value="System-Regular">System-Regular</option>
+              <option value="System-Light">System-Light</option>
+              <option value="System-Bold">System-Bold</option>
           </select>
+        </div>
+        
+
+        <div class="input-group">
+          <label for="time_f_size">Time Font Size (1-150): </label>
+          <input id="time_f_size" name="time_font_size" type="text"/>
         </div>
         
         <div class="input-group">
@@ -63,12 +78,27 @@
           
         
         <!-- <div class="input-group">
-          <p class="group-label">I prefer a clock face that is:</p>
-          <input id="clock-analog" name="clock" type="checkbox" value="Analog"/>
-          <label class="inline" for="clock-analog">Analog</label>
-          <input id="clock-digital" name="clock" type="checkbox" value="Digital"/>
-          <label class="inline" for="clock-digital">Digital</label>
+          <p class="group-label">Show battery level:</p>
+          <input id="battery-yes" name="battery" type="checkbox" value="Yes"/>
+          <label class="inline" for="clock-analog">Yes</label>
+          <input id="battery-no" name="battery_" type="checkbox" value="No"/>
+          <label class="inline" for="clock-digital">No</label>
         </div> -->
+
+        <p>
+          Check the user activity you want to display:
+        </p>
+        <p>
+               <input type="checkbox" name="user_activity" id="javascript" value="hrm" />
+               <label for="javascript">HRM</label>
+          
+               <input type="checkbox" name="user_activity" id="html" value="battery" />
+               <label for="html">Battery Level</label>
+          
+               <input type="checkbox" name="user_activity" id="css" value="steps" />
+               <label for="css">Steps</label>
+          </p>
+
         <button type="submit">Submit</button>
     </form>
     </section>
