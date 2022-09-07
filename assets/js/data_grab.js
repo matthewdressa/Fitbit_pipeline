@@ -1,9 +1,5 @@
 // JS adapted from here: https://www.learnwithjason.dev/blog/get-form-values-as-json
 
-// let clock_pref = 'empty';
-// var cp = 'empty';
-// console.log(cp);
-// console.log(clock_pref);
 
 function handleFormSubmit(event) {
   // Function definition: Handles the submitted form by saving all entries into
@@ -24,7 +20,7 @@ function handleFormSubmit(event) {
   var color_pref = formJSON['color'];
   var file_name_ex = formJSON['filename'];
 
-  formJSON.user_activities = data.getAll("user_activity");
+  formJSON.file_name = formJSON['filename']['name'];
 
   var file_name = formJSON['filename']['name'];
 

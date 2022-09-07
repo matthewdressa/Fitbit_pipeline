@@ -28,18 +28,18 @@
         </div>
 
         <div class="input-group">
-          <label for="pri_color_code">Primary Color (HEX):</label>
-          <input id="pri_color_code" name="pri_color_code" type="text"/>
+          <label for="primary_color_pref">Primary Color:</label>
+          <input id="primary_color_pref" name="primary_color_pref" type="text"/>
         </div>
         
         <div class="input-group">
-          <label for="sec_color_code">Secondary Color (HEX):</label>
-          <input id="sec_color_code" name="sec_color_code" type="text"/>
+          <label for="secondary_color_pref">Secondary Color:</label>
+          <input id="secondary_color_pref" name="secondary_color_pref" type="text"/>
         </div>
 
         <div class="input-group">
-          <label for="tertiary_color_code">Tertiary Color (HEX):</label>
-          <input id="tertiary_color_code" name="tertiary_color_code" type="text"/>
+          <label for="tertiary_color_pref">Tertiary Color:</label>
+          <input id="tertiary_color_pref" name="tertiary_color_pref" type="text"/>
         </div>
         
         
@@ -55,7 +55,7 @@
 
         <div class="input-group">
           <label for="f_style">Time Font Style:</label>
-          <select id="f_style" name="time_font_style">
+          <select id="f_style" name="time_font_fam">
               <option value="System-Regular">System-Regular</option>
               <option value="System-Light">System-Light</option>
               <option value="System-Bold">System-Bold</option>
@@ -68,11 +68,7 @@
           <input id="time_f_size" name="time_font_size" type="text"/>
         </div>
         
-        <div class="input-group">
-          <label for="filename">
-            <input type="file" id="filename" name="filename">
-          </label>
-        </div>
+        
 
        
           
@@ -85,7 +81,7 @@
           <label class="inline" for="clock-digital">No</label>
         </div> -->
 
-        <p>
+        <!-- <p>
           Check the user activity you want to display:
         </p>
         <p>
@@ -97,8 +93,69 @@
           
                <input type="checkbox" name="user_activity" id="css" value="steps" />
                <label for="css">Steps</label>
+          </p> -->
+
+          <p>
+            Would you like the HRM to display on the watchface? :
+          </p>
+          <p>
+            <input type="checkbox" name="_hrm_" id="javascript" value="yes" />
+            <label for="javascript">Yes</label>
+       
+            <input type="checkbox" name="_hrm_" id="html" value="no" />
+            <label for="html">No</label>
+       
+            
           </p>
 
+          <p>
+            Would you like your step count to display on the watchface?:
+          </p>
+          <p>
+            <input type="checkbox" name="_steps_" id="javascript" value="yes" />
+            <label for="javascript">Yes</label>
+       
+            <input type="checkbox" name="_steps_" id="html" value="no" />
+            <label for="html">No</label>
+       
+            
+          </p>
+
+          <p>
+            Would you like your battery level to display on the watchface?:
+          </p>
+          <p>
+            <input type="checkbox" name="_battery_" id="javascript" value="yes" />
+            <label for="javascript">Yes</label>
+       
+            <input type="checkbox" name="_battery_" id="html" value="no" />
+            <label for="html">No</label>
+       
+            
+          </p>
+          <p>Please upload an image</p>
+
+          <div class="input-group">
+            <label for="filename">
+              <input type="file" id="filename" name="filename">
+            </label>
+          </div>
+          <br>
+          <p>
+            Would you like your image background to be an image or solid color?:
+          </p>
+          <p>
+            <input type="checkbox" name="img_or_color" id="javascript" value="color" />
+            <label for="javascript">Color</label>
+       
+            <input type="checkbox" name="img_or_color" id="html" value="img" />
+            <label for="html">Image</label>
+       
+            
+          </p>
+
+
+          
         <button type="submit">Submit</button>
     </form>
     </section>
